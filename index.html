@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile</title>
+</head>
+<style>
+    body{
+        margin: 0%;
+    }
+    .container{
+        background-image: url(iPhone.png);
+        width:300px;
+        height:500px;
+        position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        bottom:50px;
+        
+    }
+    .check{
+        position: absolute;
+        top:330px;
+        border-radius: 10px;
+        right: 140px;
+    }
+    #check1:checked ~.check{
+        display: none;
+    }
+    #check1:checked ~.page{
+        display: block;
+        top:0%
+    }
+    #check1{
+        display: none;
+    }
+    .img{
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .wallpaper{
+        background-image: url(HD-wallpaper-iphone-xs-iphone-x-xd-xs-max-apple-black.jpg);
+        height:410px;
+        width:200px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        left:75.5px;
+        top:52px;
+        border-radius: 20px;
+    }
+    .page{
+        background-color: rgb(255, 255, 255);
+        width:190px;
+        height:410px;
+        position: absolute;
+        border-radius: 20px;
+        right:10px;
+        top:-100%;
+        transition: 5s;
+         
+        
+        transition: all .1s ease-in-out;
+    }
+    
+     
+    .check2{
+        position:absolute;
+        top:330px;
+        left:130px;
+    }
+    .img:active{
+        width:37px;
+        height:37px;
+
+    }
+    .unlock{
+        background-color: rgba(255, 255, 255, 0.9);
+        width:191px;
+        height:410px;
+        border-radius: 20px;
+        position:absolute;
+        right:10px;
+        top:0%;
+        transition: all .3s ease-in-out;
+    }
+    #check2:checked ~.unlock{
+        top:-100%;
+    }
+    #check2:checked ~#unlock{
+       display: none
+    }
+    #check2{
+        display: none;
+    }
+    #unlock{
+        position:absolute;
+        top:330px;
+        color:#000000;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 30px;
+        left:50px;
+    }
+    
+    #op:checked ~ #an{
+        font-size: 100px;
+    }
+    #op{
+        display: none;
+    }
+    .songs{
+        background-color: #ffffff;
+        width:188px;
+        height:150px;
+        font-family:sans-serif;
+        font-size: 25px;
+        border-radius: 20px 20px 0px 0px;
+      
+         
+    }
+    .songs .song{
+       
+        box-shadow: 0 0 10px rgb(0, 0, 0);
+        padding-top: 10px;
+        border-bottom: solid 1px rgb(51, 42, 42);
+        margin-top: 3px;
+         cursor:pointer;
+    }
+    #youtube{
+        display: none;
+    }
+   .youtube{
+    background-color: #ffffff;
+        width:190px;
+        height:410px;
+        position: absolute;
+        border-radius: 20px;
+        right:10px;
+        top:-110%;
+        transition: 5s;
+        color:#000000;
+        transition: all .4s ease-in-out;
+    }
+    #youtube:checked ~ .youtube{
+        top:0%;
+    }
+    #iframe{
+        rotate: 90deg;
+        position: relative;
+        right:120px;
+        top:100px;
+        border-radius: 40px 20px 20px 40px;
+    }
+    .img1{
+        position: relative;
+        right: 30px;
+        bottom:10px;
+        border-radius: 50%;
+    }
+</style>
+<body>
+    <center>
+   <div class="container">
+    <div class="wallpaper">
+      
+        <input type="checkbox" id="check1">
+        <label for="check1" class="check"><img src="eeababaf-ae2b-4742-a7e2-0a6bcd0442b1.jpg" width="40" height="40" class="img"></label>
+
+        <label for="youtube" class="check2"><img src="youtube.jpg" width="90" height="70" class="img1"></label>
+        <input type="checkbox" id="youtube">
+        <input type="checkbox" id="check2">
+        <div class="unlock"></div>
+        <label for="check2" id="unlock">Swipe</label>
+        <div class="page">
+            <div class="songs">
+                  <div class="song" onclick="song.play()">One Dance</div>
+                  <div class="song" onclick="song1.play()">One Dance</div> 
+                  <div class="song" onclick="song2.play()">One Dance</div> 
+                  <div class="song" onclick="song3.play()">One Dance</div>
+                  <div class="song" onclick="song4.play()">One Dance</div> 
+                  <div class="song" onclick="song5.play()">One Dance</div> 
+                  <div class="song" onclick="song6.play()">One Dance</div> 
+                  <div class="song" onclick="song7.play()">cannn</div> 
+                   
+            </div>
+        </div>
+        <br>
+         <div class="youtube">
+        <iframe width="426" height="197"  id="iframe" src="https://www.youtube.com/embed/NmjXP6ukrrI" title="YouTube video player" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         </div>
+
+       
+   </center>
+   <script>
+    let song,song1,song3,song4,song5,song6,song7;
+    song=new Audio();
+    song.src="drake one dance (inshotmusic.in).mp3";
+   </script>
+</body>
+</html>
