@@ -9,10 +9,9 @@
         .maindiv{
           background-color: rgb(255, 255, 255);
             width: 412px;
-            height:120vh;
+            height:110vh;
             margin: 0%;
-            box-shadow: 0 0 40px black;
-             
+            box-shadow: 0 0 40px black; 
         }
         body{
             margin:0%;
@@ -20,9 +19,10 @@
         }
         .table{
             background-image: url(tree-736885_1280.jpg);
-            height: 1000px;
+            height: 1100px;
             width:412px;
             background-position: center;
+            background-size: cover;
         }
         .lines{
             background-color:none;
@@ -32,6 +32,9 @@
             font-size: 40px;
             color:#fff;
             font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          }
+          .lines:hover{
+            color:red;
           }
           .radio{
             margin-top: 18px;
@@ -46,52 +49,166 @@
             color:red;
             font-size:200px;
           }
+          .none{
+            display: none;
+            transition: all 5s ease-in-out;
+          }
+          #last{
+            display: none;
+            position: absolute;
+            left:105px;
+          }
+          #message{
+            color:#fff;
+            font-size: 40px;
+          }
+           
         }
         </style>
 </head>
 <body>
     <center>
-    <div class="maindiv">
+    <div class="maindiv" id="main">
       
       <div class="table">
         <br>
-        <div class="lines"  onclick="run1()">
-            <input type="radio" name="n1" class="radio" id="ok">d
+        <br>
+        <br>
+        <br>
+        <div class="lines"  onclick="run1()" id="lines1">
+            <input type="radio" name="n1" class="radio" id="ok">Rohit
         </div>
         <br>
-        <div class="lines" onclick="run2()">
-            <input type="radio" name="n1" class="radio">s
+        <div class="lines" onclick="run2()" id="lines2">
+            <input type="radio" name="n1" class="radio">Yash
         </div>
         <br>
-        <div class="lines" onclick="run3()">
-            <input type="radio" name="n1" class="radio">s
+        <div class="lines" onclick="run3()" id="lines3">
+            <input type="radio" name="n1" class="radio">Prathmesh
         </div>
         <br>
-        <div class="lines" onclick="run4()">
-            <input type="radio" name="n1" class="radio">s
+        <div class="lines" onclick="run4()" id="lines4">
+            <input type="radio" name="n1" class="radio">Pranav
         </div>
-        <label id="more">ok</label>
-         
+        <br>
+        <div class="lines" onclick="run5()" id="lines5">
+            <input type="radio" name="n1" class="radio">Prabal
+        </div>
+        <br>
+        <div class="lines" onclick="run6()" id="lines6">
+            <input type="radio" name="n1" class="radio">Gaurav
+        </div>
+        <br>
+        <div class="lines" onclick="run7()" id="lines7">
+            <input type="radio" name="n1" class="radio">Satyajit
+        </div>
+        <br>
+        <div id="last">
+            <img src="null.jpg" width="250" height="250">
+        </div>
+        <br>
+        <h2 id="message"></h2>
       </div>
     </div>
+    <br>
+    <br>
     </center>
     <script>
-        let a=document.getElementById("more");
+        let dis1=document.getElementById("lines1");
+        let dis2=document.getElementById("lines2");
+        let dis3=document.getElementById("lines3");
+        let dis4=document.getElementById("lines4");
+        let dis5=document.getElementById("lines5");
+        let dis6=document.getElementById("lines6");
+        let dis7=document.getElementById("lines7");
+
+        let msg=document.getElementById("message");
+
+        //Sound Section For Sound
+        let song=document.getElementById("song");
+
+        //Image Section For apply The Image
+
+        let img1=document.getElementById("last");
+
+       
         function run1(){
+            dis1.classList.add("none");
+            dis2.classList.add("none");
+            dis3.classList.add("none");
+            dis4.classList.add("none");
+            dis5.classList.add("none");
+            dis6.classList.add("none");
+            dis7.classList.add("none");
+            img1.style.display="block";
+          
            
-            a.classList.add("much");
+
+           
+
         }
         function run2(){
-            alert("2")
+            dis1.classList.add("none");
+            dis2.classList.add("none");
+            dis3.classList.add("none");
+            dis4.classList.add("none");
+            dis5.classList.add("none");
+            dis6.classList.add("none");
+            dis7.classList.add("none");
+            msg.innerText="Yash X Piyusha";
         }
         function run3(){
-            alert("3")
+            dis1.classList.add("none");
+            dis2.classList.add("none");
+            dis3.classList.add("none");
+            dis4.classList.add("none");
+            dis5.classList.add("none");
+            dis6.classList.add("none");
+            dis7.classList.add("none");
+            msg.innerText="Prathmesh X Tanvi";
         }
         function run4(){
-            alert("4")
+            dis1.classList.add("none");
+            dis2.classList.add("none");
+            dis3.classList.add("none");
+            dis4.classList.add("none");
+            dis5.classList.add("none");
+            dis6.classList.add("none");
+            dis7.classList.add("none");
+            msg.innerHTML="<del>Coming Soon </del>";
+        }
+        function run5(){
+            dis1.classList.add("none");
+            dis2.classList.add("none");
+            dis3.classList.add("none");
+            dis4.classList.add("none");
+            dis5.classList.add("none");
+            dis6.classList.add("none");
+            dis7.classList.add("none");
+            msg.innerText="Prathmesh Dhund <br>Hi lega ";
+        }
+        function run6(){
+            dis1.classList.add("none");
+            dis2.classList.add("none");
+            dis3.classList.add("none");
+            dis4.classList.add("none");
+            dis5.classList.add("none");
+            dis6.classList.add("none");
+            dis7.classList.add("none");
+            msg.innerText="Yash X Piyusha";
+
+        }
+        function run7(){
+            dis1.classList.add("none");
+            dis2.classList.add("none");
+            dis3.classList.add("none");
+            dis4.classList.add("none");
+            dis5.classList.add("none");
+            dis6.classList.add("none");
+            dis7.classList.add("none");
+            msg.innerText="Yash X Piyusha";
+
         }
     </script>
-   
-    
 </body>
 </html>

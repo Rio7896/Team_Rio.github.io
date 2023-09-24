@@ -1,0 +1,180 @@
+body{
+    margin: 0%;
+
+}
+.header{
+    background-color: #000560;
+    height:30px;
+    color:white;
+    font-size: 20px;
+    padding-top: 15px;
+    
+}
+#home{
+    padding-left: 50px;
+    color:red;
+    cursor: pointer;
+}
+#login{
+    padding-left: 400px;
+    cursor: pointer;
+}
+#signup{
+    padding-left: 50px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+#logo{
+    padding-left:600px ;
+    cursor: pointer;
+    
+}
+ 
+.search input{
+    width:500px;
+    font-size: 20px;
+    padding-left: 10px;
+    background-image: url("search.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: cover;
+    padding-left: 30px;
+    border-radius: 10px;
+    color:black;
+    border-spacing: 10px  ;
+    border: 3px solid black;
+    box-shadow: 0 0 10px grey;
+    color:blueviolet;
+    
+}
+.box1{
+    background-color: whitesmoke;
+    height:1740px;
+    box-shadow: 0 0 20px grey;
+    width:1300px;
+    border-radius: 10px;
+    
+}
+.system{
+    padding-right: 420px;
+    color:black;
+    padding-left: 100px;
+}
+.system b{
+    font-size: 20px;
+}
+ 
+#button1{
+    color:white;
+    box-shadow: 0 0 20px gray;
+    font-size: 25px;
+    border-radius: 7px;
+    background-color:skyblue;
+  font-display: flex;
+  border:2px solid black;
+  cursor: pointer;
+   
+}
+.image img{
+    padding-top: 10;
+    width:1200px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+    
+}
+.warzone b{
+    font-size: 30px;
+
+}
+.warzone span{
+    color:black;
+    font-size: 50px;
+    text-shadow: 0 0 20px black;
+}
+.box2{
+    background-color: orange;
+    box-shadow: 0 0 20px grey;
+    height:200px;
+    background-size: cover;
+   
+   
+}
+.box2 b{
+    color:white;
+    font-size: 20px;
+}
+
+#email{
+    width:400px;
+    font-size: 15px;
+    
+    margin-top: 10px;
+    cursor: pointer;
+    
+  
+}
+#textarea{
+    font-size: 15px;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+     
+    
+     
+}
+#id{
+    width: 200px;
+    font-size: 15px;
+    border-radius: 5px; 
+    font-size: 15px;
+     
+    
+    
+}
+
+#leave{
+    width:200px;
+    font-size: 15px;
+    border-radius: 5px;
+    font-size: 15px;
+     
+    
+}
+#name{
+   
+     background-size: cover;
+     font-size: 15px;
+     
+    
+}
+ 
+.system span{
+    color:red;
+    font-size: 20px;
+
+
+}
+  
+ #next{
+    margin-left: 10px;
+    background-color: red;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(240, 11, 221);
+    color:white;
+    font-style: bold;
+    border:  solid 1px red;
+ }
+
+.button{
+    display: flex;
+    padding-left: 600px;
+    word-spacing: 20px;
+}
+.warzone  b{
+    text-shadow: 20px red;
+}
+.name b{
+    font-size: 20px;
+}
