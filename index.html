@@ -56,11 +56,20 @@
           #last{
             display: none;
             position: absolute;
-            left:105px;
+            left:5px;
           }
           #message{
             color:#fff;
             font-size: 40px;
+            animation: beat all 5s infinite alternate;
+          }
+          @keyframes beat{
+            25%{
+                color:red;
+            }
+            75%{
+                color:aqua;
+            }
           }
            
         }
@@ -104,11 +113,14 @@
         </div>
         <br>
         <div id="last">
-            <img src="null.jpg" width="250" height="250">
+            <img src="2023-05-03_07-59-15_UTC_profile_pic.jpg" width="400" height="250">
         </div>
         <br>
         <h2 id="message"></h2>
       </div>
+      <audio id="song">
+        <source src="space song.mp3">
+      </audio>
     </div>
     <br>
     <br>
@@ -121,6 +133,7 @@
         let dis5=document.getElementById("lines5");
         let dis6=document.getElementById("lines6");
         let dis7=document.getElementById("lines7");
+        let quate="Khawbo Ki Rani Ho kya bas Khaawbo me hi aaogi";
 
         let msg=document.getElementById("message");
 
@@ -133,6 +146,8 @@
 
        
         function run1(){
+          let op=prompt("Enter Code");
+          if(op==15){
             dis1.classList.add("none");
             dis2.classList.add("none");
             dis3.classList.add("none");
@@ -141,13 +156,17 @@
             dis6.classList.add("none");
             dis7.classList.add("none");
             img1.style.display="block";
-          
-           
-
-           
+            song.play();
+          }
+            else{
+              alert("not working");
+              
+            }
 
         }
         function run2(){
+           let op=prompt("Enter Code");
+           if(op==15){
             dis1.classList.add("none");
             dis2.classList.add("none");
             dis3.classList.add("none");
@@ -155,9 +174,16 @@
             dis5.classList.add("none");
             dis6.classList.add("none");
             dis7.classList.add("none");
-            msg.innerText="Yash X Piyusha";
+            msg.innerText="Yash X Piyusha..❤️";
+            song.play();
+           }
+           else{
+            alert("not working");
+           }
         }
         function run3(){
+           let op=prompt("Enter Code");
+            if(op==15){
             dis1.classList.add("none");
             dis2.classList.add("none");
             dis3.classList.add("none");
@@ -165,9 +191,17 @@
             dis5.classList.add("none");
             dis6.classList.add("none");
             dis7.classList.add("none");
-            msg.innerText="Prathmesh X Tanvi";
+            msg.innerText="Prathmesh X Tanvi..❤️";
+            song.play();
+            }
+            else{
+              alert("not working");
+
+            }
         }
         function run4(){
+           let op=prompt("Enter Code");
+           if(op==15){
             dis1.classList.add("none");
             dis2.classList.add("none");
             dis3.classList.add("none");
@@ -175,9 +209,16 @@
             dis5.classList.add("none");
             dis6.classList.add("none");
             dis7.classList.add("none");
-            msg.innerHTML="<del>Coming Soon </del>";
+            msg.innerHTML="<del>Coming Soon .....❤️</del>"+quate;
+            song.play();
+           }
+           else{
+            alert("not working");
+           }
         }
         function run5(){
+           let op=prompt("Enter Code");
+            if(op==15){
             dis1.classList.add("none");
             dis2.classList.add("none");
             dis3.classList.add("none");
@@ -185,9 +226,16 @@
             dis5.classList.add("none");
             dis6.classList.add("none");
             dis7.classList.add("none");
-            msg.innerText="Prathmesh Dhund <br>Hi lega ";
+            msg.innerText="Prathmesh Dhund Hi lega...❤️";
+            song.play();
+            }
+            else{
+              alert("not working");
+            }
         }
         function run6(){
+           let op=prompt("Enter Code");
+            if(op==15){
             dis1.classList.add("none");
             dis2.classList.add("none");
             dis3.classList.add("none");
@@ -195,10 +243,17 @@
             dis5.classList.add("none");
             dis6.classList.add("none");
             dis7.classList.add("none");
-            msg.innerText="Yash X Piyusha";
+            msg.innerText="Gaurav X Sofiya..❤️";
+            song.play();
+            }
+            else{
+              alert("not working");
+            }
 
         }
         function run7(){
+           let op=prompt("Enter Code");
+            if(op==15){
             dis1.classList.add("none");
             dis2.classList.add("none");
             dis3.classList.add("none");
@@ -206,7 +261,12 @@
             dis5.classList.add("none");
             dis6.classList.add("none");
             dis7.classList.add("none");
-            msg.innerText="Yash X Piyusha";
+            msg.innerText="Satya X .....❤️";
+            song.play();
+            }
+            else{
+              alert("not working");
+            }
 
         }
     </script>
