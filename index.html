@@ -7,7 +7,7 @@
     <style>
         @media (max-width:412px){
         .maindiv{
-            background-color: rgb(255, 255, 255);
+          background-color: rgb(255, 255, 255);
             width: 412px;
             height:120vh;
             margin: 0%;
@@ -19,20 +19,32 @@
             padding: 0%;
         }
         .table{
-            background-color: rgba(0, 0, 0,0.5);
-            height: 500px;
-            width:408px;
+            background-image: url(tree-736885_1280.jpg);
+            height: 1000px;
+            width:412px;
+            background-position: center;
         }
         .lines{
-            background-color: #fff;
+            background-color:none;
+            border: solid 2px rgb(255, 255, 255);
             width:400px;
             height:50px;  
+            font-size: 40px;
+            color:#fff;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
           }
           .radio{
-            margin-top: 20px;
+            margin-top: 18px;
             right:365px;
             position: absolute;
             
+          }
+          #ok:checked ~ .lines{
+           background-color: red;
+          }
+          .much{
+            color:red;
+            font-size:200px;
           }
         }
         </style>
@@ -43,24 +55,42 @@
       
       <div class="table">
         <br>
-        <div class="lines">
-            <input type="radio" name="n1" class="radio">
+        <div class="lines"  onclick="run1()">
+            <input type="radio" name="n1" class="radio" id="ok">d
         </div>
         <br>
-        <div class="lines">
-            <input type="radio" name="n1" class="radio">
+        <div class="lines" onclick="run2()">
+            <input type="radio" name="n1" class="radio">s
         </div>
         <br>
-        <div class="lines">
-            <input type="radio" name="n1" class="radio">
+        <div class="lines" onclick="run3()">
+            <input type="radio" name="n1" class="radio">s
         </div>
         <br>
-        <div class="lines">
-            <input type="radio" name="n1" class="radio">
+        <div class="lines" onclick="run4()">
+            <input type="radio" name="n1" class="radio">s
         </div>
+        <label id="more">ok</label>
+         
       </div>
     </div>
     </center>
+    <script>
+        let a=document.getElementById("more");
+        function run1(){
+           
+            a.classList.add("much");
+        }
+        function run2(){
+            alert("2")
+        }
+        function run3(){
+            alert("3")
+        }
+        function run4(){
+            alert("4")
+        }
+    </script>
    
     
 </body>
